@@ -1,0 +1,26 @@
+/* Variables */
+$vin-lightGrey: #383F47;
+$vin-grey: #2F343A;
+$vin-darkGrey: #292C33;
+$vin-white: #F3F8FB;
+
+
+/* Styles */
+body {
+  font: 14px 'Segeo UI', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  color: $vin-white;
+  min-width: 230px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-weight: 300;
+  background-color: $vin-grey;
+  background-repeat: no-repeat, repeat;
+  background-size:cover;
+  max-width: 100%;
+}
+
+td {
+	padding: 12px;
+}

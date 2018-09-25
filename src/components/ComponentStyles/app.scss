@@ -1,0 +1,38 @@
+/* Variables */
+$vin-darkWhite: #7B8590;
+$vin-lightGrey: #383F47;
+$vin-grey: #2F343A;
+$vin-darkGrey: #292C33;
+$vin-lightBlack: #1F2227;
+$vin-white: #F3F8FB;
+
+.navbar {
+    background-color: $vin-lightGrey;
+    padding: 15px;
+    max-width: 100%;
+    text-align: left;
+    border-bottom: 5px solid $vin-lightBlack;
+}
+
+.brand {
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+    padding-right: 3%;
+    padding-left: 1.5%;
+    margin: 0;
+}
+
+.switch {
+    max-width: 60%;
+    margin: auto;
+}
+
+.navLink {
+    color:$vin-darkWhite;
+    font-size: large;
+    margin: 0px;
+    text-decoration-line: none;
+    padding: 17px;  
+}
+
