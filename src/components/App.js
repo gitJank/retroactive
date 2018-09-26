@@ -1,6 +1,6 @@
 import { NavLink, Route, Switch} from "react-router-dom";
 
-import ItemsPage from "./ItemsPage";
+import UserPage from "./UserPage";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
 import React from "react";
@@ -12,22 +12,19 @@ import "./ComponentStyles/app.scss";
 class App extends React.Component {
     render() {
         const activeStyle = { 
-            color: 'white',
-            borderBottom: '4px solid ',
-            borderBottomColor: colors.darkYellow,  
+            color: colors.cyan,
+            borderBottom: '5px solid ',
+            borderBottomColor: colors.cyan,  
         };
         return (
             <div>
             <div className='navbar'>
-              
-              <span className="brand">Time Wizard</span>
-
-              <NavLink  className='navLink' exact to="/items" activeStyle={activeStyle}>Items</NavLink>
-
+              <span className="brand">Retroactive</span>
+              <NavLink  className='navLink' exact to="/" activeStyle={activeStyle}>User</NavLink>
             </div>
             <div className="switch">
             <Switch>
-              <Route exact path="/items" component={ItemsPage} />
+              <Route exact path="/" component={UserPage} />
               <Route component={NotFoundPage} />
             </Switch>
             </div>

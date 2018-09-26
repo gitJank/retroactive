@@ -51,7 +51,8 @@
     "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.6",
     "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "redux-thunk": "2.1.0",
+    "watchman": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.4",
@@ -103,6 +104,7 @@
     "rimraf": "2.6.1",
     "sass-loader": "6.0.6",
     "style-loader": "0.21.0",
+    "styled-components": "^3.4.9",
     "url-loader": "1.0.1",
     "webpack": "4.6.0",
     "webpack-bundle-analyzer": "2.11.1",

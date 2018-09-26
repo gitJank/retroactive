@@ -1,0 +1,6 @@
+{"users":[
+    {"id":12167671, "firstName": "first", "lastName": "last", "email": "fakeemail@fauxmail.com", "bio": "Hello it me"},
+    {"id":12167672, "firstName": "first2", "lastName": "last2", "email": "fakeemail2@fauxmail.com", "bio": "Hello it 2"},
+    {"id":12167673, "firstName": "first3", "lastName": "last3", "email": "fakeemail3@fauxmail.com", "bio": "Hello it 3"},
+    {"id":12167674, "firstName": "first4", "lastName": "last4", "email": "fakeemail4@fauxmail.com", "bio": "Hello it 4"}
+]}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Items from './Items';
+import UserInfo from './UserInfo';
 
-class ItemsPage extends Component {
+class UserPage extends Component {
   constructor() {
     super();
   }
@@ -9,9 +9,9 @@ class ItemsPage extends Component {
   render() {
     return (
       <div>
-        <Items />
+        <UserInfo />
       </div>);
   }
 }
 
-export default ItemsPage;
+export default UserPage;

@@ -1,8 +1,0 @@
-{"details":[
-    {"id":12167677,"name": [{"first": "Tom", "last": "Petty"}], "time": "2018-09-12 13:00", "address":"345 Fake Address Lane","state":"Illinois","zipcode":62223,"type":"VETERAN"},
-    {"id":76238242,"name": [{"first": "Boy", "last": "George"}], "time": "2018-09-14 15:00","address":"178 Oak Drive","state":"Missouri","zipcode":65783,"type":"RETIREE"},
-    {"id":66646586,"name": [{"first": "Paul", "last": "Rud"}], "time": "2018-09-19 09:00","address":"987 Breach Front Blvd.","state":"Illinois","zipcode":62245,"type":"VETERAN"},
-    {"id":21065793,"name": [{"first": "Steven", "last": "Segal"}], "time": "2018-09-21 11:00","address":"740 Rage Road","state":"Illinois","zipcode":63422,"type":"RETIREE"},
-    {"id":43807866,"name": [{"first": "Nick", "last": "Cage"}], "time": "2018-09-24 17:00","address":"409 Kitchen Cleaner Circle","state":"Missouri","zipcode":67843,"type":"RETIREE"},
-    {"id":93749384,"name": [{"first": "Rodney", "last": "Dangerfield"}], "time": "2018-09-30 12:00","address":"682 Palace Place","state":"Missouri","zipcode":67772,"type":"VETERAN"}
-]}
