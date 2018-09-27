@@ -27,7 +27,7 @@ exports.get = function(req, res, next) {
 exports.getOne = function(req, res, next) {
     var item = req.item;
     res.json(item);
-}
+};
 
 exports.put = function(req, res, next) {
     var item = req.item;
@@ -42,7 +42,7 @@ exports.put = function(req, res, next) {
         } else {
             res.json(saved);
         }
-    })
+    });
 };
 
 exports.post = function(req, res, next){

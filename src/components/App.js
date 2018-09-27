@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from 'styled-components';
 import { hot } from "react-hot-loader";
-import { colors } from "../styles/theme"
+import { colors } from "../styles/theme";
 
 const Brand = styled.span`
     font-size: 60px;

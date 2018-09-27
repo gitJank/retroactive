@@ -22,7 +22,7 @@ UserSchema.pre('save', function(next) {
 
   this.password = this.encryptPassword(this.password);
   next();
-})
+});
 
 UserSchema.methods = {
   // check the passwords on signin
@@ -32,7 +32,7 @@ UserSchema.methods = {
   // hash the passwords
   encryptPassword: function(plainTextPword) {
     if (!plainTextPword) {
-      return ''
+      return '';
     } else {
       var salt = bcrypt.genSaltSync(10);
       return bcrypt.hashSync(plainTextPword, salt);
@@ -40,7 +40,7 @@ UserSchema.methods = {
   },
 
   toJson: function() {
-    var obj = this.toObject()
+    var obj = this.toObject();
     delete obj.password;
     return obj;
   }

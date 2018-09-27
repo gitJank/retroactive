@@ -3,8 +3,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import HardSourceWebpackPlugin from 'hard-source-webpack-plugin'; 
 
-const sassVars = require(__dirname + "/src/styles/theme.js")
-
 export default {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json']

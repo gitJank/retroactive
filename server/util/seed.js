@@ -1,17 +1,17 @@
-var User = require('../api/user/userModel');
-var Item = require('../api/item/itemModel');
-var _ = require('lodash');
-var logger = require('./logger');
+const User = require('../api/user/userModel');
+const Item = require('../api/item/itemModel');
+const _ = require('lodash');
+const logger = require('./logger');
 
 logger.log('Seeding the Database');
 
-var users = [
+let users = [
   {username: 'Jimmylo', password: 'test'},
   {username: 'Tod', password: 'test'},
   {username: 'katamon', password: 'test'}
 ];
 
-var items = [
+let items = [
   {name: "this is item 1"},
   {name: "this is item 2"},
   {name: "this is item 3"},
@@ -19,9 +19,9 @@ var items = [
   {name: "this is item 5"},
   {name: "this is item 6"},
   {name: "this is item 7"},
-]
+];
 
-var createDoc = function(model, doc) {
+let createDoc = function(model, doc) {
   return new Promise(function(resolve, reject) {
     new model(doc).save(function(err, saved) {
       return err ? reject(err) : resolve(saved);
@@ -29,17 +29,17 @@ var createDoc = function(model, doc) {
   });
 };
 
-var cleanDB = function() {
+let cleanDB = function() {
   logger.log('... cleaning the DB');
-  var cleanPromises = [User, Item]
+  let cleanPromises = [User, Item]
     .map(function(model) {
       return model.deleteMany({}).exec();
     });
   return Promise.all(cleanPromises);
-}
+};
 
-var createUsers = function(data) {
-  var promises = users.map(function(user) {
+let createUsers = function(data) {
+  let promises = users.map(function(user) {
     return createDoc(User, user);
   });
 
@@ -49,8 +49,8 @@ var createUsers = function(data) {
     });
 };
 
-var createItems = function(data) {
-  var promises = items.map(function(item) {
+let createItems = function(data) {
+  let promises = items.map(function(item) {
     return createDoc(Item, item);
   });
 

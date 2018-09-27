@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { colors } from '../styles/theme';
-import Label from './Atoms/Label';
-import Textbox from './Atoms/Textbox';
+import { colors } from '../../styles/theme';
+import Label from '../Atoms/Label';
+import Textbox from '../Atoms/Textbox';
 
 const Div = styled.div`
   height: 400px;
@@ -23,7 +23,7 @@ class UserInfo extends Component {
 
     this.state = {
         user: ''
-    }
+    };
   }
 
   componentDidMount() {
@@ -31,8 +31,8 @@ class UserInfo extends Component {
         .then(results => {
             return results.json();
         }).then(data => {
-            this.setState({ user: data.users[0]})
-        })
+            this.setState({ user: data.users[0]});
+        });
   }
 
   render() {
@@ -50,7 +50,7 @@ class UserInfo extends Component {
             <InfoDiv>
                 <Label size="large"> Bio: {this.state.user.bio}</Label>
             </InfoDiv> 
-            <Textbox></Textbox>
+            <Textbox />
         </Div>);
   }
 }

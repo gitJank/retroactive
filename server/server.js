@@ -1,9 +1,9 @@
-var express = require('express');
-var app = express();
-var api = require('./api/api');
-var config = require('./config/config');
-var logger = require('./util/logger');
-var auth = require('./auth/routes');
+const express = require('express');
+const app = express();
+const api = require('./api/api');
+const config = require('./config/config');
+const logger = require('./util/logger');
+const auth = require('./auth/routes');
 // db.url is different depending on NODE_ENV
 require('mongoose').connect(config.db.url);
 

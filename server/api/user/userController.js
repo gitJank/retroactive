@@ -49,7 +49,7 @@ exports.put = function(req, res, next) {
     } else {
       res.json(saved.toJson());
     }
-  })
+  });
 };
 
 exports.post = function(req, res, next) {
