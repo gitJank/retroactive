@@ -1,6 +1,5 @@
 var router = require('express').Router();
 
-router.use('/users', require('./user/userRoutes'));
-router.use('/items', require('./item/itemRoutes'));
+router.use('/tabs', require('./tab/tabRoutes'));
 console.log("server running");
 module.exports = router;

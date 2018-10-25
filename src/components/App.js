@@ -1,5 +1,6 @@
 import { NavLink, Route, Switch} from "react-router-dom";
 import UserPage from "./UserPage";
+import TabsListPage from "./TabsList/TabsListPage";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
 import React from "react";
@@ -55,10 +56,12 @@ class App extends React.Component {
             <Navbar>
               <Brand>Retroactive</Brand>
               <StyledNavLink exact to="/" activeStyle={activeStyle}>User</StyledNavLink>
+              <StyledNavLink to="/tabs" activeStyle={activeStyle}>Tabs</StyledNavLink>
             </Navbar>
             <SwitchContainer>
                 <Switch>
                 <Route exact path="/" component={UserPage} />
+                <Route path="/tabs" component={TabsListPage} />
                 <Route component={NotFoundPage} />
                 </Switch>
             </SwitchContainer>

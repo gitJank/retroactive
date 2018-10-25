@@ -1,13 +1,13 @@
-var Item = require('./itemModel');
+var Tab = require('./tabModel');
 var _ = require('lodash');
 
 exports.params = function(req, res, next, id){
-    Item.findById(id)
-        .then(function(item) {
-            if(!item){
-                next(new Error('item not found'));
+    Tab.findById(id)
+        .then(function(tab) {
+            if(!tab){
+                next(new Error('tab not found'));
             } else {
-                req.item = item;
+                req.tab = tab;
                 next();
             }
         }, function(err) {
@@ -16,27 +16,27 @@ exports.params = function(req, res, next, id){
 };
 
 exports.get = function(req, res, next) {
-    Item.find({})
-        .then(function(items) {
-            res.json(items);
+    Tab.find({})
+        .then(function(tabs) {
+            res.json(tabs);
         }, function(err){
             next(err);
         });
 };
 
 exports.getOne = function(req, res, next) {
-    var item = req.item;
-    res.json(item);
+    var tab = req.tab;
+    res.json(tab);
 };
 
 exports.put = function(req, res, next) {
-    var item = req.item;
+    var tab = req.tab;
 
     var update = req.body;
 
-    _.merge(item, update);
+    _.merge(tab, update);
 
-    item.save(function(err, saved) {
+    tab.save(function(err, saved) {
         if(err) {
             next(err);
         } else {
@@ -46,18 +46,18 @@ exports.put = function(req, res, next) {
 };
 
 exports.post = function(req, res, next){
-    var newitem = req.body;
+    var newtab = req.body;
 
-    Item.create(newitem)
-        .then(function(item) {
-            res.json(item);
+    Tab.create(newtab)
+        .then(function(tab) {
+            res.json(tab);
         }, function(err) {
             next(err);
         });
 };
 
 exports.delete = function(req, res, next) {
-    req.item.remove(function(err, removed) {
+    req.tab.remove(function(err, removed) {
         if (err) {
             next(err);
         } else {
