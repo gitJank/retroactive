@@ -1,5 +1,5 @@
 import { NavLink, Route, Switch} from "react-router-dom";
-import UserPage from "./UserPage";
+import UserPage from "./UserInfo/UserInfo";
 import TabsListPage from "./TabsList/TabsListPage";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
@@ -45,12 +45,11 @@ const StyledNavLink = styled(NavLink)`
 const activeStyle = { 
     color: colors.cyan,
     borderBottom: '5px solid ',
-    borderBottomColor: colors.cyan,  
+    borderBottomColor: colors.cyan
 };
 
 class App extends React.Component {
     render() {
-   
         return (
             <div>
             <Navbar>
@@ -60,9 +59,9 @@ class App extends React.Component {
             </Navbar>
             <SwitchContainer>
                 <Switch>
-                <Route exact path="/" component={UserPage} />
-                <Route path="/tabs" component={TabsListPage} />
-                <Route component={NotFoundPage} />
+                    <Route exact path="/" component={UserPage} />
+                    <Route path="/tabs" component={TabsListPage} />
+                    <Route component={NotFoundPage} />
                 </Switch>
             </SwitchContainer>
           </div>

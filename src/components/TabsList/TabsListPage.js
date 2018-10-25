@@ -24,7 +24,6 @@ class TabsListPage extends Component {
             );
           });
           this.setState({tabs: tabs});
-          console.log(this.state.tabs);
         });
   }
 
